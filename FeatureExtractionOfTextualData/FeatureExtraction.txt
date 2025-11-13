@@ -1,0 +1,19 @@
+Feature Extraction:
+    -> The mapping from textual data to real valued vectors is called feature extraction.
+    ->  the process of converting raw text into numerical representations that machine learning algorithms can process
+
+Common Techniques are:
+1. BOW(Bag of Words): List of unique words in the text corpus
+    It models text as an unordered collection of words, disregarding grammar, word order, and syntax while capturing the frequency of each word's occurrence.
+    This approach treats a document as a "bag" where only the presence and count of words matter, not their sequence.
+
+2. TF-IDF(Term Frequency - Inverse Document Frequency): To count no. of times each word appear on the document.
+
+TF : (no.of times term t appear in the document) / (no. of terms in the document)
+IDF : log(N/n)
+        N -> no. of documents
+        n -> no. of documents a term t has appeared in.
+
+    The IDF value of a rare word is high, whereas the IDF of a frequent word is low.
+
+TF-IDF : TF * IDF
